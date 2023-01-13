@@ -1,0 +1,160 @@
+//index.js
+
+
+import React from "react";
+import ReactDom from "react-dom";
+import App from './App.jsx'
+import './style.css'
+
+ReactDom.render(<>
+    
+<App></App>
+</>,document.getElementById('root'))
+
+
+
+//App.jsx
+import React from 'react';
+import About from './About';
+const data=[
+    {
+        img:'https://a2zithub.org/uploads/165607334828103320.jpg',
+        title:'Developer Drive',
+        desc:'As mentioned above, this is a perfect option if you’re just beginning your career in web development. By web developers, for web developers, Developer Drive offers the latest news in the world of web development. This includes opinion articles, tutorials, tips &'
+    },
+    {
+        img:'https://a2zithub.org/uploads/165726426980309001.jfif',
+        title:'Simple Programmer',
+        desc:'While Simple Programmer was originally created by founder John Sonmez to distill what he learned as a web developer into understandable content, today it is focused on helping software developers, programmers and other IT professionals improve thei'
+    },
+    {
+        img:'https://a2zithub.org/uploads/165607342297600439.jpg',
+        title:'CodeNewbie',
+        desc:'Just like the blog title says – if you’re a code newbie looking for insight on all things web development, you’re in the right place. This site acts as a virtual community for anyone new to the coding world. CodeNewbie offers an open look into the lives of web'
+    },
+    {
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62ImNLsgNNy7QyymwjJm9deO6moW0xKBBZVWIOtRrER_oGm18nhKHAVDL1DcYeZEnBpI&usqp=CAU',
+        title:'Scotch.io',
+        desc:'So, you’ve been a web developer for a while, or maybe you’re just a fast learner. Either way, hats off to you! Some of the ‘beginner’ blogs outlined above may be a bit too junior for you, which is where scotch.io comes in handy. This blog is full of tutorials on'
+    },
+    {
+        img:'https://www.shutterstock.com/image-vector/abstract-futuristic-cyberspace-binary-code-260nw-740523562.jpg',
+        title:'Codrops',
+        desc:'Codrops is a web design and development blog focused on providing its audience with useful tutorials and articles on the latest trends in the industry. The site has a unique approach to content as its very how-to heavy with videos that walk you through'
+    },
+    
+    {
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfNikreL2sfwO_bXUSwV-CDu8X129UqWRnEw&usqp=CAU',
+        title:'Developer Drive',
+        desc:'As mentioned above, this is a perfect option if you’re just beginning your career in web development. By web developers, for web developers, Developer Drive offers the latest news in the world of web development. This includes opinion articles, tutorials, tips &'
+    },
+    {
+        img:'https://a2zithub.org/uploads/165726426980309001.jfif',
+        title:'Simple Programmer',
+        desc:'While Simple Programmer was originally created by founder John Sonmez to distill what he learned as a web developer into understandable content, today it is focused on helping software developers, programmers and other IT professionals improve thei'
+    },
+    {
+        img:'https://a2zithub.org/uploads/165607342297600439.jpg',
+        title:'CodeNewbie',
+        desc:'Just like the blog title says – if you’re a code newbie looking for insight on all things web development, you’re in the right place. This site acts as a virtual community for anyone new to the coding world. CodeNewbie offers an open look into the lives of web'
+    },
+    {
+        img:'https://static.vecteezy.com/system/resources/thumbnails/008/095/064/small/low-code-platform-low-code-development-technology-concept-lcdp-easy-coding-hexagonal-grid-sphere-in-wireframe-hand-on-blue-background-illustration-vector.jpg',
+        title:'Scotch.io',
+        desc:'So, you’ve been a web developer for a while, or maybe you’re just a fast learner. Either way, hats off to you! Some of the ‘beginner’ blogs outlined above may be a bit too junior for you, which is where scotch.io comes in handy. This blog is full of tutorials on'
+    },
+    {
+        img:'https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624__340.jpg',
+        title:'Codrops',
+        desc:'Codrops is a web design and development blog focused on providing its audience with useful tutorials and articles on the latest trends in the industry. The site has a unique approach to content as its very how-to heavy with videos that walk you through'
+    },
+    {
+        img:'https://a2zithub.org/uploads/165607334828103320.jpg',
+        title:'Developer Drive',
+        desc:'As mentioned above, this is a perfect option if you’re just beginning your career in web development. By web developers, for web developers, Developer Drive offers the latest news in the world of web development. This includes opinion articles, tutorials, tips &'
+    },
+    {
+        img:'https://a2zithub.org/uploads/165726426980309001.jfif',
+        title:'Simple Programmer',
+        desc:'While Simple Programmer was originally created by founder John Sonmez to distill what he learned as a web developer into understandable content, today it is focused on helping software developers, programmers and other IT professionals improve thei'
+    },
+    {
+        img:'https://a2zithub.org/uploads/165607342297600439.jpg',
+        title:'CodeNewbie',
+        desc:'Just like the blog title says – if you’re a code newbie looking for insight on all things web development, you’re in the right place. This site acts as a virtual community for anyone new to the coding world. CodeNewbie offers an open look into the lives of web'
+    },
+    {
+        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62ImNLsgNNy7QyymwjJm9deO6moW0xKBBZVWIOtRrER_oGm18nhKHAVDL1DcYeZEnBpI&usqp=CAU',
+        title:'Scotch.io',
+        desc:'So, you’ve been a web developer for a while, or maybe you’re just a fast learner. Either way, hats off to you! Some of the ‘beginner’ blogs outlined above may be a bit too junior for you, which is where scotch.io comes in handy. This blog is full of tutorials on'
+    },
+    {
+        img:'https://www.shutterstock.com/image-vector/abstract-futuristic-cyberspace-binary-code-260nw-740523562.jpg',
+        title:'Codrops',
+        desc:'Codrops is a web design and development blog focused on providing its audience with useful tutorials and articles on the latest trends in the industry. The site has a unique approach to content as its very how-to heavy with videos that walk you through'
+    },
+    
+]
+
+const App = () => {
+    return (
+        <>
+        <div className="container pt-3">
+        <div className="row">
+          <div className='col-12 text-center'>
+            <h1 className='text-bold text-primary'>My Blogs</h1>
+          </div>
+                <About img={data[0].img} title={data[0].title} desc={data[0].desc}></About>
+                <About img={data[1].img} title={data[1].title} desc={data[1].desc}></About>
+                <About img={data[2].img} title={data[2].title} desc={data[2].desc}></About>
+                <About img={data[3].img} title={data[3].title} desc={data[3].desc}></About>
+                <About img={data[4].img} title={data[4].title} desc={data[4].desc}></About>
+                <About img={data[5].img} title={data[5].title} desc={data[5].desc}></About>
+                <About img={data[6].img} title={data[6].title} desc={data[6].desc}></About>
+                <About img={data[7].img} title={data[7].title} desc={data[7].desc}></About>
+                <About img={data[8].img} title={data[8].title} desc={data[8].desc}></About>
+                <About img={data[9].img} title={data[9].title} desc={data[9].desc}></About>
+                <About img={data[10].img} title={data[10].title} desc={data[10].desc}></About>
+                <About img={data[11].img} title={data[11].title} desc={data[11].desc}></About>
+                <About img={data[12].img} title={data[12].title} desc={data[12].desc}></About>
+                <About img={data[13].img} title={data[13].title} desc={data[13].desc}></About>
+                <About img={data[14].img} title={data[14].title} desc={data[14].desc}></About>
+        </div>
+    </div>
+          
+        </>
+    );
+}
+
+export default App;
+
+
+
+
+
+////About.jsx
+
+import React from 'react';
+
+const About = (props) => {
+    return (
+        <>
+        <div className="col-8 mb-5">
+            <div className="card shadow-lg">
+                    <div className="card-header border-0" style={{height:'300px'}}>
+                        <img src={props.img} alt="" style={{width:'100%',height:'100%'}}/>
+                        </div>
+                    <div className="card-body p-4 cardbody border-0">
+                        <h2>{props.title}</h2>
+                        <p>{props.desc}</p>
+                    </div>
+                    <div className='card-footer border-0'>
+                            <button className='btn btn-primary rounded-pill btn-lg'>Read More</button>
+                    </div>
+            </div>
+        </div>
+        </>
+    );
+}
+
+export default About;

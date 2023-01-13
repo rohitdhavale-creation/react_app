@@ -1,0 +1,33 @@
+// index.js
+
+import React from "react";
+import ReactDOM from "react-dom";
+import './style.css'
+
+var name ="Rohit";
+var surname ="Dhavale"
+ReactDOM.render(<>
+
+<h1>{`${name} ${surname}`}</h1>
+<h1 style={{color:'red',fontSize:"20px"}}>Skroman GLobal</h1>
+<img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg"/>
+<p className="para">sjhbdsjd smbasajb sasbmasmnb sbsssjbs nsmmsaS  MSNSMN  SMNS SSASAS SSASA SSSSDSDADSD SSDASDSDSSJDB MNMJ</p>
+</>,document.getElementById("root"));
+
+
+
+cssss
+
+
+
+h1{
+    color:rgb(255, 252, 252);
+    font-size:60px;
+    text-shadow: 5px 5px 20px rgb(201, 50, 50);
+
+}
+
+.para{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
